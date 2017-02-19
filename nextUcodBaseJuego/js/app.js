@@ -4,7 +4,50 @@ function inicioTitulo() {
 function finTitulo() {
   $("#titulo1").switchClass("estilo-titulo","main-titulo",1000,"easeInOutBounce");
 };
+function animacionImagen() {
 
+}
+function agregarImagen() {
+for (var i = 0; i < 7; i++) {
+  var caramelo = (Math.random()*10)
+  switch (caramelo) {
+    case (caramelo == 1):
+     var  imagen = '<img src="image/1.png">';
+    break;
+    case (caramelo == 2):
+      var  imagen = '<img src="image/2.png">';
+    break;
+    case (caramelo == 3):
+      var imagen = '<img src="image/3.png">';
+      break;
+    case (caramelo == 4):
+      var imagen = '<img src="image/4.png">';
+      break;
+      case (caramelo == 5):
+       var  imagen = '<img src="image/1.png">';
+      break;
+      case (caramelo == 6):
+       var  imagen = '<img src="image/1.png">';
+      break;
+      case (caramelo == 7):
+       var  imagen = '<img src="image/1.png">';
+      break;
+      case (caramelo == 8):
+       var  imagen = '<img src="image/1.png">';
+      break;
+    case (caramelo == 9):
+      var imagen = '<img src="image/1.png">';
+      break;
+      case (caramelo == 10):
+       var  imagen = '<img src="image/1.png">';
+      break;
+    default:
+  }
+  var fil1= {};
+   fil1[i]=$("#fila1").prepend(imagen);
+
+};
+};
 
 function finJuego() {
 
@@ -27,12 +70,13 @@ $(document).ready(function () {
 
 
   $("#boton1").click(function () {
-
-  $('.timer').startTimer({
-  onComplete: function () {
-    finJuego();
-  }
-});
+    $('.timer').startTimer({
+      onComplete: function () {
+        finJuego();
+      }
+    });
+    agregarImagen();
 
   });
+
 });

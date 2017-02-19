@@ -116,6 +116,7 @@ body{
 .data-titulo, .data-info{
   font-family: gameFont;
   color: #E8CA06;
+  width: 100%;
 }
 .titulo-over{
   font-family: gameFont;
