@@ -19,26 +19,24 @@ body{
   justify-content: space-between;
 }
 
-.termin{
-  font-family: gameFont;
-  font-size: 3em;
-  text-align: center;
-  color: #DCFF0E;
-  width: 100%;
-
-}
-
 .main-titulo{
   font-family: gameFont;
   font-size: 3em;
   color: #DCFF0E;
   width: 100%;
 }
-.estilo-titulo{
+.titulo2{
   font-family: gameFont;
   font-size: 3em;
   color: red;
   width: 100%;
+}
+.termin{
+  font-family: gameFont;
+  font-size: 3em;
+  color: #DCFF0E;
+  width: 100%;
+  text-align: center;
 }
 
 .panel-tablero{
@@ -50,9 +48,8 @@ body{
   display: flex;
   flex-flow: row wrap;
 }
-
-.panel-2-tablero{
-
+.panel-tablero2{
+  width: 0%;
   border: 10px solid #E87306;
   background: rgba(232, 115, 6, 0.5);
   border-radius: 5px;
@@ -69,9 +66,8 @@ body{
   flex-flow: column nowrap;
   justify-content: space-between;
 }
-
-.panel-2-score{
-  width: 97%;
+.panel-score2{
+  width: 98%;
   height: 700px;
   display: flex;
   flex-flow: column nowrap;
@@ -86,13 +82,11 @@ body{
   border: 10px solid #E87306;
   border-radius: 5px;
   background: rgba(232, 115, 6, 0.5);
-
 }
-
 .tiempo2{
   text-align: center;
   height: 23%;
-  width: 0%;
+  width: 100%;
   border: 10px solid #E87306;
   border-radius: 5px;
   background: rgba(232, 115, 6, 0.5);
@@ -106,17 +100,9 @@ body{
   justify-content: center;
 }
 
-.timer{
-  font-family: gameFont;
-  color: #E8CA06;
-  font-size: 1em;
-  width: 100%;
-}
-
 .data-titulo, .data-info{
   font-family: gameFont;
   color: #E8CA06;
-  width: 100%;
 }
 .titulo-over{
   font-family: gameFont;
@@ -125,6 +111,14 @@ body{
   color: #DCFF0E;
 }
 .btn-reinicio{
+  background: #E8CA06;
+  border: 6px solid #FFB206;
+  border-radius: 5px;
+  font-family: gameFont;
+  font-size: 1.2em;
+  color: #FF4007;
+}
+.btn-inicio{
   background: #E8CA06;
   border: 6px solid #FFB206;
   border-radius: 5px;
